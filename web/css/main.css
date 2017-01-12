@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+nav{
+  padding-bottom: 1vw;
+}
+.nav-pills>li+li {
+    margin-left: 1vw;
+}
+.nav a{
+color: #ff7e82;
+}
+.nav li.active>a{
+  background-color: #ff7e82;
+}
+.nav li.active>a:hover{
+  background-color: #ff7e82;
+}
+nav .nav_admin>a:hover{
+  background-color: #242424;
+  color: white;
+}

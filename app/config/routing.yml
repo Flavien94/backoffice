@@ -1,0 +1,7 @@
+my_app_user:
+    resource: "@MyAppUserBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+my_app_core:
+    resource: "@MyAppCoreBundle/Resources/config/routing.yml"
+    prefix:   /

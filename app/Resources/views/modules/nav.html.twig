@@ -1,0 +1,37 @@
+<h1>Logo</h1>
+<div class="container-fluide">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <nav>
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active">
+                        <a href="{{ path('post') }}">Acceuil</a>
+                      </li>
+                        <li>
+                        <a href="#">Nouveautés</a>
+                      </li>
+                        <li>
+                        <a href="#">Disponibles</a>
+                      </li>
+                        <li>
+                        <a href="#">Nous contacter</a>
+                      </li>
+                    {% if is_granted("ROLE_ADMIN") %}
+                        <li role="" class="nav_admin">
+                            <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+                        </li>
+                        <li role="" class="nav_admin">
+                            <a href="{{ path('post_create') }}">Poster</a>
+                        </li>
+                    {% else %}
+                        <li role="presentation">
+                            <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+                        </li>
+                    {% endif %}
+
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>

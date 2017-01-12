@@ -1,0 +1,27 @@
+# my_app_core_homepage:
+#     path:     /
+#     defaults: { _controller: MyAppCoreBundle:Default:index }
+   #POST
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+post:
+    path:     /
+    defaults: { _controller: MyAppCoreBundle:Post:index }
+post_create:
+    path:     admin/create
+    defaults: { _controller: MyAppCoreBundle:Post:create }
+post_new:
+    path:     admin/new
+    defaults: { _controller: MyAppCoreBundle:Post:new }
+post_show:
+    path:     /show/{id}
+    defaults: { _controller: MyAppCoreBundle:Post:show }
+post_edit:
+    path:     admin/{id}/edit
+    defaults: { _controller: MyAppCoreBundle:Post:edit }
+post_update:
+    path:     admin/{id}/update
+    defaults: { _controller: MyAppCoreBundle:Post:update }
+post_delete:
+    path:     admin/{id}/delete
+    defaults: { _controller: MyAppCoreBundle:Post:delete }
